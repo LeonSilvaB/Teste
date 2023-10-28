@@ -12,33 +12,31 @@
 </head>
 <body>
     <div id="wrap">
-        <div class="grid-header"></div>
+        <div class="grid-header">
+        </div>
         <section class="portifolio-image">
-            <div class="portifolio-image_center"></div>
+        <div class="portifolio-image_center"></div>
         </section>
-        <div class="grid-header_item"></div>
-    <h1 class="portifolio-name">Leonardo Bezerra</h1>
-    <small class="portifolio-role">Software Developer
-    <ul class="portifolio-contacts">
-        <li><img src="./assets/imagens/github.svg"></li>
-        <li><img src="./assets/imagens/email.svg"></li>
-        <li><img src="./assets/imagens/linkedin.svg"></li>
-    </ul>
+    <div class="grid-header_item"></div>
+        <h1 class="portifolio-name js-portifolio-name"></h1>
+        <small class="portifolio-role js-portifolio-role"></small>
+        <ul class="portifolio-contacts js-portifolio-contacts"></ul>
     <div 
         class="grid-resume">
             <h2>Sobre Mim</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos a numquam ad doloribus explicabo. Quod eum tempore vitae doloribus architecto, laboriosam corporis nulla veniam iure accusamus similique aspernatur ipsum cupiditate!
+            <p class="js-resume-text"></p>
             </div>
             </p>
             <div class="grid-btns">
                 <div class="grid-row">
-                <button class ="btn primary>">Meu curriculo</button>
-                <a class= "btn" href="">Fale comigo</a>
+                    <button class ="btn primary" onclick="test('Leonardo')">Meu curriculo</button>
+                    <a class= "btn" href="">Fale comigo</a>
+                </div>
+                <button class="btn js-btn-projects=">Meus Projetos</button>
             </div>
-                <a class="btn" href="">Meus Projetos</a>
-                    
-            </div>
-        
+        <section class="modal js-modal"><button class="js-modal-close">X</button></section></section>
+    </div>
+        <script type="module" src="./assets/javascript/app.js"></script>
+        <script type="module" src="./data/data.js"></script>
 </body>
 </html>

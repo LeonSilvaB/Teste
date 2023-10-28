@@ -12,23 +12,32 @@ body {
     border-bottom: 10px solid var(--border);
     border-right: 10px solid var(--border);
     font-family: 'Ubuntu';
+    
 }
 
-section.portifolio-image {
+.portifolio-image{
+    width: 227px;
+    height: 227px;
+    background: var(--img-bg);
+    border-radius: 100%;
+    box-shadow: 0 6px 12px rgba(244, 169, 55, 0.38)
+}
+
+.portifolio-image_center {
     width: 217px;
     height: 217px;
     margin: 5px 0 0 5px;
-    background: var(--img-bg);
     border: 1px solid var(--img-border);
     border-radius: 100%;
-    box-shadow: 0 6px 12px rgba(244, 169, 55, 0.38)
+    background: var(--img-bg2);
+
 }
 
 .portifolio-name {
 font-size: 36px;
 font-weight: 900;
 color: var(--font-h1);
-text-shadow: 0 6px 12px
+text-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 
 }
 
@@ -42,7 +51,7 @@ text-shadow: 0 6px 12px
 .portifolio-contacts {
     list-style: none;
     display: flex;
-    flex-direction: brown;
+    flex-direction: row;
     align-items: center;
     gap: 16px;
     margin-top: 24px;
@@ -52,6 +61,7 @@ h2{
     color: var(--font-small);
     margin-bottom: 16px;
 }
+
 h2::after{
     content: "";
     position: absolute;
@@ -82,4 +92,16 @@ p{
 .primary {
     background: var(--border);
     color: var(--img-bg);
+}
+
+.modal{
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 70%;
+    background: #ffffff;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.40)
+    
 }
