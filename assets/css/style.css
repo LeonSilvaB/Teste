@@ -105,3 +105,15 @@ p{
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.40)
     
 }
+
+.js-modal-close {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background:
+
+    }
+    
+}
